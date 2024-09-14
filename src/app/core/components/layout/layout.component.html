@@ -1,0 +1,18 @@
+
+<mat-sidenav-container class="layout-container">
+  <!-- Sidebar -->
+  <mat-sidenav #sidenav mode="side" opened="false">
+    <app-sidebar/>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content>
+    <!-- Topbar -->
+    <app-topbar (toggleSidenav)="toggleSidebar()"></app-topbar>
+
+    <!-- Contenido principal -->
+    <div class="content-container">
+      <app-content></app-content> <!-- Este contendrá el contenido dinámico -->
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

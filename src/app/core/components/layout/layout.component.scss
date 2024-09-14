@@ -1,0 +1,16 @@
+.layout-container {
+  height: 100vh; /* Asegura que el layout ocupe todo el viewport */
+  display: flex;
+  flex-direction: column; /* Hace que el contenido sea una columna bajo el topbar */
+}
+
+mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-container {
+  flex: 1; /* Hace que el contenido ocupe todo el espacio restante debajo del topbar */
+  overflow: auto; /* Permite scroll si el contenido es mayor que la pantalla */
+}
